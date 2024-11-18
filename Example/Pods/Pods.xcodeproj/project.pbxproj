@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BEDF76C5C1B16F776760A4DCF482B4A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723A659BFE7F98529FC5BA94BF0BF30 /* Extensions.swift */; };
+		24277681F1DAE6B6F85F7090CFFC3640 /* ConsoleDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A906B91B9326FA4C3537FE72B839684 /* ConsoleDestination.swift */; };
+		284B80AB9DD4E4060B3335BC4CFDF236 /* SFLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4DF36FBE964BAE6AD32760FDCDAB2B /* SFLogger.swift */; };
+		2DC4B66CA8A065F127B1CAB87B090C73 /* GoogleCloudDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AF7FDD7FF85789C52883816DEB3E72 /* GoogleCloudDestination.swift */; };
+		3655435E2885F913E47FF3F17D387F0F /* SwiftyBeaver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BA14167B520F12D30F70FE175D7951 /* SwiftyBeaver-dummy.m */; };
+		4E28666C1083D48C15607BDA5B2ED179 /* FilterValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A8E2B500DEA9917B691373923560CC /* FilterValidator.swift */; };
+		522DBFD86F0F03AE4A13E47EAFE0905A /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2828DE82F3A5F0450EB78844C80703 /* Filter.swift */; };
+		674013C94A08B68045B2EA8A2A0A6972 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		692D638E3781B609DADDFB13241A9301 /* SFLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F11B1F7D0792678E6C708CA0CF1F2D /* SFLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72873F8F17241933030C393E78169F3B /* SFLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4225C711E2917AD9E18297C4470DB2C /* SFLogger-dummy.m */; };
+		8BCFD55A54E4EBFCF10D143F6D8C53BC /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE8751CF4A1694DFD769C9665385CE /* FileDestination.swift */; };
+		90701391A9E2FCCFD526D6EA8E16EE7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		966788877B3811A1F7F26983DE764B97 /* BaseDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C8BCB4372387EA1FCA12D4DD37B86A /* BaseDestination.swift */; };
+		9F94FD6ED6CB09A449878FD0E152F158 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45441D10B8AF634D5FDD7B364537630C /* SwiftyBeaver.swift */; };
+		AF6D8F2B498DF0869D8C24D9C4975D7E /* Pods-SFLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AA36FEC53BEDDB0DB69466888DFCF6E /* Pods-SFLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B91DF4334AC161D8411A6C968780B51D /* SwiftyBeaver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 269070711FEEBCE21DB6D85C9C7DD3C2 /* SwiftyBeaver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFA4772445E2041B8D838387CA71124B /* Pods-SFLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5E91D630A01F10D880E84E9ABF019A /* Pods-SFLogger_Example-dummy.m */; };
+		C250F9348F9205BB23F9458DB651B422 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DD98DFAC4A012A5A0D625D21E1524 /* Base64.swift */; };
+		C543088960B654747D593B0027380FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1476C6E07719BB0D4986E01E6C28DC2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1740FECD5A74A42ADAE96F3A8246787A;
+			remoteInfo = SwiftyBeaver;
+		};
+		4D4426B4654E3FAB938B0ACC9D40710E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1740FECD5A74A42ADAE96F3A8246787A;
+			remoteInfo = SwiftyBeaver;
+		};
+		4FFEFF44782C619D4128A0B354F9D30D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6CEA71E753675D90FBC51D4748FAF46;
+			remoteInfo = SFLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C98732D5BDBF88EBA193F6F2A7FC571 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0D5E91D630A01F10D880E84E9ABF019A /* Pods-SFLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SFLogger_Example-dummy.m"; sourceTree = "<group>"; };
+		128FC42751A44B544B00AFBEC21FB3F0 /* SwiftyBeaver-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyBeaver-Info.plist"; sourceTree = "<group>"; };
+		1676775CDBF88782CFDE5569FD7E922B /* Pods-SFLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
+		16AF7FDD7FF85789C52883816DEB3E72 /* GoogleCloudDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleCloudDestination.swift; path = Sources/GoogleCloudDestination.swift; sourceTree = "<group>"; };
+		1916717DCEB62122C85BEBA60018F576 /* SFLogger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SFLogger.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		19C8BCB4372387EA1FCA12D4DD37B86A /* BaseDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDestination.swift; path = Sources/BaseDestination.swift; sourceTree = "<group>"; };
+		1E4DF36FBE964BAE6AD32760FDCDAB2B /* SFLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFLogger.swift; path = SFLogger/Classes/SFLogger.swift; sourceTree = "<group>"; };
+		22D6E02FAFCDB72D0442A260511C05AB /* Pods-SFLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		269070711FEEBCE21DB6D85C9C7DD3C2 /* SwiftyBeaver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-umbrella.h"; sourceTree = "<group>"; };
+		292E36C85BC2FAAF887B397590822171 /* SwiftyBeaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBeaver.debug.xcconfig; sourceTree = "<group>"; };
+		3A906B91B9326FA4C3537FE72B839684 /* ConsoleDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleDestination.swift; path = Sources/ConsoleDestination.swift; sourceTree = "<group>"; };
+		41F471DB661855383529DF39E3F0E33F /* SwiftyBeaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBeaver.release.xcconfig; sourceTree = "<group>"; };
+		45441D10B8AF634D5FDD7B364537630C /* SwiftyBeaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyBeaver.swift; path = Sources/SwiftyBeaver.swift; sourceTree = "<group>"; };
+		4AA36FEC53BEDDB0DB69466888DFCF6E /* Pods-SFLogger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SFLogger_Example-umbrella.h"; sourceTree = "<group>"; };
+		4CE9FDBCDD025FC2D4BBB5FBEA889181 /* Pods-SFLogger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SFLogger_Example.modulemap"; sourceTree = "<group>"; };
+		4DC4C6C1F702210EAE2D16E0799157D4 /* Pods-SFLogger_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFLogger_Example-Info.plist"; sourceTree = "<group>"; };
+		51BA14167B520F12D30F70FE175D7951 /* SwiftyBeaver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyBeaver-dummy.m"; sourceTree = "<group>"; };
+		6EAA69597F37E4B6B5D70CC43728BF5D /* SFLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFLogger-prefix.pch"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7323BB1F5635C2875E594E437AF89CE3 /* SFLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFLogger.release.xcconfig; sourceTree = "<group>"; };
+		7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyBeaver; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F11B1F7D0792678E6C708CA0CF1F2D /* SFLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFLogger-umbrella.h"; sourceTree = "<group>"; };
+		8723A659BFE7F98529FC5BA94BF0BF30 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		8B0D74AEC7DAD1E085B8FECE3C274D93 /* Pods-SFLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SFLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8F2A95311298AF73AA46D75E52ABB13F /* Pods-SFLogger_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SFLogger_Example"; path = Pods_SFLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C2828DE82F3A5F0450EB78844C80703 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2BB08E9394BC2093FF2D773ED27AB4B /* SFLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFLogger.debug.xcconfig; sourceTree = "<group>"; };
+		A5A8E2B500DEA9917B691373923560CC /* FilterValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilterValidator.swift; path = Sources/FilterValidator.swift; sourceTree = "<group>"; };
+		A5EF47549D60907778E5174C75245D71 /* SFLogger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SFLogger-Info.plist"; sourceTree = "<group>"; };
+		A72DD98DFAC4A012A5A0D625D21E1524 /* Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base64.swift; path = Sources/Base64.swift; sourceTree = "<group>"; };
+		AA39103744536F98F7459106DBC91A03 /* SwiftyBeaver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-prefix.pch"; sourceTree = "<group>"; };
+		ABD4D660D235478C12EDEB0F0115CB1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B4225C711E2917AD9E18297C4470DB2C /* SFLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFLogger-dummy.m"; sourceTree = "<group>"; };
+		C872EDE6EA410D631CA09251DE548245 /* SwiftyBeaver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyBeaver.modulemap; sourceTree = "<group>"; };
+		D358BDF7265716BDE81C43409453FEB9 /* SFLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SFLogger.modulemap; sourceTree = "<group>"; };
+		D5CE8751CF4A1694DFD769C9665385CE /* FileDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileDestination.swift; path = Sources/FileDestination.swift; sourceTree = "<group>"; };
+		E42A1982A3C0E8F612C1953FF009E48E /* Pods-SFLogger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFLogger_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E50820A8EDF537FCA69E0F2671BE1659 /* SFLogger */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SFLogger; path = SFLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11A5AAFBFA2CC237FE4CFD870E9E364 /* Pods-SFLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72D5F8BDF5643F01450A50E68F32DD8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90701391A9E2FCCFD526D6EA8E16EE7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4524E7C9BA6C5B68B4CEE133F083D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C543088960B654747D593B0027380FE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE3ABC443735D5CDEC93EB93CA59EEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674013C94A08B68045B2EA8A2A0A6972 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AE925B346202A8D3BCBADD5F9DD8BF9 /* SFLogger */ = {
+			isa = PBXGroup;
+			children = (
+				1E4DF36FBE964BAE6AD32760FDCDAB2B /* SFLogger.swift */,
+				4C0E5EB5254FEEBA5E6DF68F11BF6EFB /* Pod */,
+				D9C942FCFF38C3B62341524A87509F20 /* Support Files */,
+			);
+			name = SFLogger;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		266115662C6159874690D01873030C20 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C872EDE6EA410D631CA09251DE548245 /* SwiftyBeaver.modulemap */,
+				51BA14167B520F12D30F70FE175D7951 /* SwiftyBeaver-dummy.m */,
+				128FC42751A44B544B00AFBEC21FB3F0 /* SwiftyBeaver-Info.plist */,
+				AA39103744536F98F7459106DBC91A03 /* SwiftyBeaver-prefix.pch */,
+				269070711FEEBCE21DB6D85C9C7DD3C2 /* SwiftyBeaver-umbrella.h */,
+				292E36C85BC2FAAF887B397590822171 /* SwiftyBeaver.debug.xcconfig */,
+				41F471DB661855383529DF39E3F0E33F /* SwiftyBeaver.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyBeaver";
+			sourceTree = "<group>";
+		};
+		4C0E5EB5254FEEBA5E6DF68F11BF6EFB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0C98732D5BDBF88EBA193F6F2A7FC571 /* LICENSE */,
+				ABD4D660D235478C12EDEB0F0115CB1E /* README.md */,
+				1916717DCEB62122C85BEBA60018F576 /* SFLogger.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5F07739584BC3BEA02C095C212A43DEA /* Pods-SFLogger_Example */ = {
+			isa = PBXGroup;
+			children = (
+				4CE9FDBCDD025FC2D4BBB5FBEA889181 /* Pods-SFLogger_Example.modulemap */,
+				8B0D74AEC7DAD1E085B8FECE3C274D93 /* Pods-SFLogger_Example-acknowledgements.markdown */,
+				F11A5AAFBFA2CC237FE4CFD870E9E364 /* Pods-SFLogger_Example-acknowledgements.plist */,
+				0D5E91D630A01F10D880E84E9ABF019A /* Pods-SFLogger_Example-dummy.m */,
+				E42A1982A3C0E8F612C1953FF009E48E /* Pods-SFLogger_Example-frameworks.sh */,
+				4DC4C6C1F702210EAE2D16E0799157D4 /* Pods-SFLogger_Example-Info.plist */,
+				4AA36FEC53BEDDB0DB69466888DFCF6E /* Pods-SFLogger_Example-umbrella.h */,
+				22D6E02FAFCDB72D0442A260511C05AB /* Pods-SFLogger_Example.debug.xcconfig */,
+				1676775CDBF88782CFDE5569FD7E922B /* Pods-SFLogger_Example.release.xcconfig */,
+			);
+			name = "Pods-SFLogger_Example";
+			path = "Target Support Files/Pods-SFLogger_Example";
+			sourceTree = "<group>";
+		};
+		9F681279BEBC6BF5E23174403D269973 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC5998ADA2E49BCF77BE9DD7FA6C90D1 /* SwiftyBeaver */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC5998ADA2E49BCF77BE9DD7FA6C90D1 /* SwiftyBeaver */ = {
+			isa = PBXGroup;
+			children = (
+				A72DD98DFAC4A012A5A0D625D21E1524 /* Base64.swift */,
+				19C8BCB4372387EA1FCA12D4DD37B86A /* BaseDestination.swift */,
+				3A906B91B9326FA4C3537FE72B839684 /* ConsoleDestination.swift */,
+				8723A659BFE7F98529FC5BA94BF0BF30 /* Extensions.swift */,
+				D5CE8751CF4A1694DFD769C9665385CE /* FileDestination.swift */,
+				9C2828DE82F3A5F0450EB78844C80703 /* Filter.swift */,
+				A5A8E2B500DEA9917B691373923560CC /* FilterValidator.swift */,
+				16AF7FDD7FF85789C52883816DEB3E72 /* GoogleCloudDestination.swift */,
+				45441D10B8AF634D5FDD7B364537630C /* SwiftyBeaver.swift */,
+				266115662C6159874690D01873030C20 /* Support Files */,
+			);
+			name = SwiftyBeaver;
+			path = SwiftyBeaver;
+			sourceTree = "<group>";
+		};
+		C3DD319F59EAE417F16C3D81FB5139ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F2A95311298AF73AA46D75E52ABB13F /* Pods-SFLogger_Example */,
+				E50820A8EDF537FCA69E0F2671BE1659 /* SFLogger */,
+				7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				EFA96727D28D9B58BBCB3ED859EE15E5 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9F681279BEBC6BF5E23174403D269973 /* Pods */,
+				C3DD319F59EAE417F16C3D81FB5139ED /* Products */,
+				FE38526657C58A3D38169A2E37632CA7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9C942FCFF38C3B62341524A87509F20 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D358BDF7265716BDE81C43409453FEB9 /* SFLogger.modulemap */,
+				B4225C711E2917AD9E18297C4470DB2C /* SFLogger-dummy.m */,
+				A5EF47549D60907778E5174C75245D71 /* SFLogger-Info.plist */,
+				6EAA69597F37E4B6B5D70CC43728BF5D /* SFLogger-prefix.pch */,
+				85F11B1F7D0792678E6C708CA0CF1F2D /* SFLogger-umbrella.h */,
+				A2BB08E9394BC2093FF2D773ED27AB4B /* SFLogger.debug.xcconfig */,
+				7323BB1F5635C2875E594E437AF89CE3 /* SFLogger.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SFLogger";
+			sourceTree = "<group>";
+		};
+		EFA96727D28D9B58BBCB3ED859EE15E5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AE925B346202A8D3BCBADD5F9DD8BF9 /* SFLogger */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FE38526657C58A3D38169A2E37632CA7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F07739584BC3BEA02C095C212A43DEA /* Pods-SFLogger_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4BEF83FB3F7FC353208E0B80AFA9DA65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692D638E3781B609DADDFB13241A9301 /* SFLogger-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC7A1C134461FF8AB1B6E7B9A11EF4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6D8F2B498DF0869D8C24D9C4975D7E /* Pods-SFLogger_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCA1F69F1B1799451BFC4F99DE22481E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B91DF4334AC161D8411A6C968780B51D /* SwiftyBeaver-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE8E0F151833F407CE029F6D2A044D5 /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */;
+			buildPhases = (
+				FCA1F69F1B1799451BFC4F99DE22481E /* Headers */,
+				5AD523282EEA5B719D7A3DC212401196 /* Sources */,
+				FCE3ABC443735D5CDEC93EB93CA59EEE /* Frameworks */,
+				294DEF2472CF9568E54B292FBB33FB47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyBeaver;
+			productName = SwiftyBeaver;
+			productReference = 7A5F7001277980B8F3EEA75BCD346E53 /* SwiftyBeaver */;
+			productType = "com.apple.product-type.framework";
+		};
+		49C7DAC298169CB67B3D3AB1DD096FE0 /* Pods-SFLogger_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8BF45F05D75C17F236B11325DBF3AB0 /* Build configuration list for PBXNativeTarget "Pods-SFLogger_Example" */;
+			buildPhases = (
+				BCC7A1C134461FF8AB1B6E7B9A11EF4F /* Headers */,
+				7668FB6BD29362431B91C9B534F2ACFF /* Sources */,
+				B4524E7C9BA6C5B68B4CEE133F083D41 /* Frameworks */,
+				E42169B0400762709ACCADDB5E0210BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E1F78E5EE0092A7E00233744DA59808 /* PBXTargetDependency */,
+				7B16209D349F44B25711DFE709F2B620 /* PBXTargetDependency */,
+			);
+			name = "Pods-SFLogger_Example";
+			productName = Pods_SFLogger_Example;
+			productReference = 8F2A95311298AF73AA46D75E52ABB13F /* Pods-SFLogger_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6CEA71E753675D90FBC51D4748FAF46 /* SFLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB5FFC80872999A4DBD407005F0494B2 /* Build configuration list for PBXNativeTarget "SFLogger" */;
+			buildPhases = (
+				4BEF83FB3F7FC353208E0B80AFA9DA65 /* Headers */,
+				3DBCD2FADAD7354C6105D0D8A5E37A47 /* Sources */,
+				72D5F8BDF5643F01450A50E68F32DD8F /* Frameworks */,
+				7305F0E3EB531EF7A34E1DE4075BFDD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F86DAD10B0FB4004D39E3EA52F778857 /* PBXTargetDependency */,
+			);
+			name = SFLogger;
+			productName = SFLogger;
+			productReference = E50820A8EDF537FCA69E0F2671BE1659 /* SFLogger */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C3DD319F59EAE417F16C3D81FB5139ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49C7DAC298169CB67B3D3AB1DD096FE0 /* Pods-SFLogger_Example */,
+				C6CEA71E753675D90FBC51D4748FAF46 /* SFLogger */,
+				1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		294DEF2472CF9568E54B292FBB33FB47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7305F0E3EB531EF7A34E1DE4075BFDD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42169B0400762709ACCADDB5E0210BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DBCD2FADAD7354C6105D0D8A5E37A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284B80AB9DD4E4060B3335BC4CFDF236 /* SFLogger.swift in Sources */,
+				72873F8F17241933030C393E78169F3B /* SFLogger-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AD523282EEA5B719D7A3DC212401196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C250F9348F9205BB23F9458DB651B422 /* Base64.swift in Sources */,
+				966788877B3811A1F7F26983DE764B97 /* BaseDestination.swift in Sources */,
+				24277681F1DAE6B6F85F7090CFFC3640 /* ConsoleDestination.swift in Sources */,
+				0BEDF76C5C1B16F776760A4DCF482B4A /* Extensions.swift in Sources */,
+				8BCFD55A54E4EBFCF10D143F6D8C53BC /* FileDestination.swift in Sources */,
+				522DBFD86F0F03AE4A13E47EAFE0905A /* Filter.swift in Sources */,
+				4E28666C1083D48C15607BDA5B2ED179 /* FilterValidator.swift in Sources */,
+				2DC4B66CA8A065F127B1CAB87B090C73 /* GoogleCloudDestination.swift in Sources */,
+				9F94FD6ED6CB09A449878FD0E152F158 /* SwiftyBeaver.swift in Sources */,
+				3655435E2885F913E47FF3F17D387F0F /* SwiftyBeaver-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7668FB6BD29362431B91C9B534F2ACFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA4772445E2041B8D838387CA71124B /* Pods-SFLogger_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B16209D349F44B25711DFE709F2B620 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyBeaver;
+			target = 1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */;
+			targetProxy = 4D4426B4654E3FAB938B0ACC9D40710E /* PBXContainerItemProxy */;
+		};
+		9E1F78E5EE0092A7E00233744DA59808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SFLogger;
+			target = C6CEA71E753675D90FBC51D4748FAF46 /* SFLogger */;
+			targetProxy = 4FFEFF44782C619D4128A0B354F9D30D /* PBXContainerItemProxy */;
+		};
+		F86DAD10B0FB4004D39E3EA52F778857 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyBeaver;
+			target = 1740FECD5A74A42ADAE96F3A8246787A /* SwiftyBeaver */;
+			targetProxy = 1476C6E07719BB0D4986E01E6C28DC2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08A87027D99D70A34511136FD31B0B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1676775CDBF88782CFDE5569FD7E922B /* Pods-SFLogger_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SFLogger_Example/Pods-SFLogger_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SFLogger_Example/Pods-SFLogger_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4D2DA9246CF266EE0CC3B473A15EF5EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292E36C85BC2FAAF887B397590822171 /* SwiftyBeaver.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyBeaver;
+				PRODUCT_NAME = SwiftyBeaver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		617BB269A3F7D229C89D88E8D6CAC60A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F471DB661855383529DF39E3F0E33F /* SwiftyBeaver.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBeaver/SwiftyBeaver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyBeaver/SwiftyBeaver.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyBeaver;
+				PRODUCT_NAME = SwiftyBeaver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8E262551705488F95680864C4C5B9D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D6E02FAFCDB72D0442A260511C05AB /* Pods-SFLogger_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SFLogger_Example/Pods-SFLogger_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SFLogger_Example/Pods-SFLogger_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CED61FC14A8D0DFFF7A0DE8D182B7531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2BB08E9394BC2093FF2D773ED27AB4B /* SFLogger.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SFLogger/SFLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SFLogger/SFLogger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SFLogger/SFLogger.modulemap";
+				PRODUCT_MODULE_NAME = SFLogger;
+				PRODUCT_NAME = SFLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EAD3FA081FE509F1E33C9B8A8CD0DE50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7323BB1F5635C2875E594E437AF89CE3 /* SFLogger.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SFLogger/SFLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SFLogger/SFLogger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SFLogger/SFLogger.modulemap";
+				PRODUCT_MODULE_NAME = SFLogger;
+				PRODUCT_NAME = SFLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8BF45F05D75C17F236B11325DBF3AB0 /* Build configuration list for PBXNativeTarget "Pods-SFLogger_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E262551705488F95680864C4C5B9D5F /* Debug */,
+				08A87027D99D70A34511136FD31B0B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE8E0F151833F407CE029F6D2A044D5 /* Build configuration list for PBXNativeTarget "SwiftyBeaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D2DA9246CF266EE0CC3B473A15EF5EC /* Debug */,
+				617BB269A3F7D229C89D88E8D6CAC60A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB5FFC80872999A4DBD407005F0494B2 /* Build configuration list for PBXNativeTarget "SFLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED61FC14A8D0DFFF7A0DE8D182B7531 /* Debug */,
+				EAD3FA081FE509F1E33C9B8A8CD0DE50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

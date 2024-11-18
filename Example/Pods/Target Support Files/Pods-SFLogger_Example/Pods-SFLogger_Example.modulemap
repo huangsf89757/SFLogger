@@ -1,0 +1,6 @@
+framework module Pods_SFLogger_Example {
+  umbrella header "Pods-SFLogger_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

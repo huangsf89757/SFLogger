@@ -1,0 +1,23 @@
+PODS:
+  - SFLogger (0.1.0):
+    - SwiftyBeaver
+  - SwiftyBeaver (2.0.0)
+
+DEPENDENCIES:
+  - SFLogger (from `../../../Server/SFLogger/`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SwiftyBeaver
+
+EXTERNAL SOURCES:
+  SFLogger:
+    :path: "../../../Server/SFLogger/"
+
+SPEC CHECKSUMS:
+  SFLogger: 32dc52852844a0ac9243948c00d64e02cc5a680a
+  SwiftyBeaver: 014b0c12065026b731bac80305294f27d63e27f6
+
+PODFILE CHECKSUM: d85314c6cf7c958af0d862ab521ed794f6eb99c3
+
+COCOAPODS: 1.12.1
