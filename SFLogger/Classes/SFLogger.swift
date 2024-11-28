@@ -9,8 +9,6 @@ import Foundation
 // Third
 import SwiftyBeaver
 
-public typealias Log = SwiftyBeaver
-
 public class SFLogger {
     public static func config() {
         /*
@@ -47,5 +45,49 @@ public class SFLogger {
         file.levelString.error = "[E]"
         file.format = "$Dyyyy-MM-dd HH:mm:ss.SSSSSSZ$d $C$L$c $N.$F:$l - $M"
         SwiftyBeaver.addDestination(file)
+    }
+}
+
+// MARK: - 可变参数版本
+extension SFLogger {
+    public class func verbose(_ messages: Any...,
+        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+        let message = messages.map { String(describing: $0) }.joined(separator: " ")
+        SwiftyBeaver.verbose(message, file: file, function: function, line: line, context: context)
+    }
+    public class func debug(_ messages: Any...,
+        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+        let message = messages.map { String(describing: $0) }.joined(separator: " ")
+        SwiftyBeaver.debug(message, file: file, function: function, line: line, context: context)
+    }
+    public class func info(_ messages: Any...,
+        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+        let message = messages.map { String(describing: $0) }.joined(separator: " ")
+        SwiftyBeaver.info(message, file: file, function: function, line: line, context: context)
+    }
+    public class func warning(_ messages: Any...,
+        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+        let message = messages.map { String(describing: $0) }.joined(separator: " ")
+        SwiftyBeaver.warning(message, file: file, function: function, line: line, context: context)
+    }
+    public class func error(_ messages: Any...,
+        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+        let message = messages.map { String(describing: $0) }.joined(separator: " ")
+        SwiftyBeaver.error(message, file: file, function: function, line: line, context: context)
+    }
+    public class func critical(_ messages: Any...,
+        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+        let message = messages.map { String(describing: $0) }.joined(separator: " ")
+        SwiftyBeaver.critical(message, file: file, function: function, line: line, context: context)
+    }
+    public class func fault(_ messages: Any...,
+        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+        let message = messages.map { String(describing: $0) }.joined(separator: " ")
+        SwiftyBeaver.fault(message, file: file, function: function, line: line, context: context)
+    }
+    public class func custom(level: SwiftyBeaver.Level, messages: Any...,
+        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+        let message = messages.map { String(describing: $0) }.joined(separator: " ")
+        SwiftyBeaver.custom(level: level, message: message, file: file, function: function, line: line, context: context)
     }
 }
