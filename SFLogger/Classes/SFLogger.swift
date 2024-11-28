@@ -9,7 +9,7 @@ import Foundation
 // Third
 import SwiftyBeaver
 
-public class SFLogger {
+open class SFLogger {
     public static func config() {
         /*
          【format说明】
