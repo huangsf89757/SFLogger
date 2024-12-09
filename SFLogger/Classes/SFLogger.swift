@@ -310,15 +310,15 @@ public enum SFLogStep {
     case end(SFLogEnd)
     
     public enum SFLogEnd {
-        case success(String?)
-        case failure(String?)
+        case success
+        case failure
         
         var desc: String {
             switch self {
-            case .success(let string):
-                return "成功 \(string)"
-            case .failure(let string):
-                return "失败 \(string)"
+            case .success:
+                return "成功"
+            case .failure:
+                return "失败"
             }
         }
     }
