@@ -50,43 +50,44 @@ open class SFLogger {
 
 // MARK: - 可变参数版本
 extension SFLogger {
-    public class func verbose(_ messages: Any...,
-        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+    public class func verbose(file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil,
+                              messages: Any...) {
         let message = messages.map { String(describing: $0) }.joined(separator: " ")
         SwiftyBeaver.verbose(message, file: file, function: function, line: line, context: context)
     }
-    public class func debug(_ messages: Any...,
-        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+    public class func debug(file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil,
+                            messages: Any...) {
         let message = messages.map { String(describing: $0) }.joined(separator: " ")
         SwiftyBeaver.debug(message, file: file, function: function, line: line, context: context)
     }
-    public class func info(_ messages: Any...,
-        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+    public class func info(file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil,
+                           messages: Any...) {
         let message = messages.map { String(describing: $0) }.joined(separator: " ")
         SwiftyBeaver.info(message, file: file, function: function, line: line, context: context)
     }
-    public class func warning(_ messages: Any...,
-        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+    public class func warning(file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil,
+                              messages: Any...) {
         let message = messages.map { String(describing: $0) }.joined(separator: " ")
         SwiftyBeaver.warning(message, file: file, function: function, line: line, context: context)
     }
-    public class func error(_ messages: Any...,
-        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+    public class func error(file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil,
+                            messages: Any...) {
         let message = messages.map { String(describing: $0) }.joined(separator: " ")
         SwiftyBeaver.error(message, file: file, function: function, line: line, context: context)
     }
-    public class func critical(_ messages: Any...,
-        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+    public class func critical(file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil,
+                               messages: Any...) {
         let message = messages.map { String(describing: $0) }.joined(separator: " ")
         SwiftyBeaver.critical(message, file: file, function: function, line: line, context: context)
     }
-    public class func fault(_ messages: Any...,
-        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+    public class func fault(file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil,
+                            messages: Any...) {
         let message = messages.map { String(describing: $0) }.joined(separator: " ")
         SwiftyBeaver.fault(message, file: file, function: function, line: line, context: context)
     }
-    public class func custom(level: SwiftyBeaver.Level, messages: Any...,
-        file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil) {
+    public class func custom(level: SwiftyBeaver.Level,
+                             file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil,
+                             messages: Any...) {
         let message = messages.map { String(describing: $0) }.joined(separator: " ")
         SwiftyBeaver.custom(level: level, message: message, file: file, function: function, line: line, context: context)
     }
