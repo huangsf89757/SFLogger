@@ -153,12 +153,12 @@ extension SFLogger {
                              message: Any) -> SFLogInfo {
         var msgs = [Any]()
         // applicationState
-        var msg_appState = "ⓤ"
+        var msg_appState = "🅄"
         switch UIApplication.shared.applicationState {
         case .active:
-            msg_appState = "🅐"
+            msg_appState = "Ⓐ"
         case .inactive:
-            msg_appState = "🅘"
+            msg_appState = "⒤"
         case .background:
             msg_appState = "🅑"
         }
