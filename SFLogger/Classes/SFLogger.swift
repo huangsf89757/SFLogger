@@ -153,16 +153,18 @@ extension SFLogger {
                              message: Any) -> SFLogInfo {
         var msgs = [Any]()
         // applicationState
-        var msg_appState = "🅄"
-        switch UIApplication.shared.applicationState {
-        case .active:
-            msg_appState = "Ⓐ"
-        case .inactive:
-            msg_appState = "⒤"
-        case .background:
-            msg_appState = "🅑"
+        DispatchQueue.main.async {
+            var msg_appState = "🅄"
+            switch UIApplication.shared.applicationState {
+            case .active:
+                msg_appState = "Ⓐ"
+            case .inactive:
+                msg_appState = "⒤"
+            case .background:
+                msg_appState = "🅑"
+            }
+            msgs.append(msg_appState)
         }
-        msgs.append(msg_appState)
         // time
         let now = Date()
         if let time = log?.time {
