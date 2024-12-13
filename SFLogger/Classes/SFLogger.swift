@@ -307,14 +307,14 @@ extension SFLogger {
 
 // MARK: - SFLogStep
 public enum SFLogStep {
-    case start
+    case begin
     case inProcess
     case success
     case failure
     
     var desc: String {
         switch self {
-        case .start:
+        case .begin:
             return "开始"
         case .inProcess:
             return "过程"
