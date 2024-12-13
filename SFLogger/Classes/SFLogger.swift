@@ -309,21 +309,8 @@ extension SFLogger {
 public enum SFLogStep {
     case start
     case inProcess
-    case end(SFLogEnd)
-    
-    public enum SFLogEnd {
-        case success
-        case failure
-        
-        var desc: String {
-            switch self {
-            case .success:
-                return "成功"
-            case .failure:
-                return "失败"
-            }
-        }
-    }
+    case success
+    case failure
     
     var desc: String {
         switch self {
@@ -331,8 +318,10 @@ public enum SFLogStep {
             return "开始"
         case .inProcess:
             return "过程"
-        case .end(let sFLogEnd):
-            return "结束 \(sFLogEnd.desc)"
+        case .success:
+            return "成功"
+        case .failure:
+            return "失败"
         }
     }
 }
