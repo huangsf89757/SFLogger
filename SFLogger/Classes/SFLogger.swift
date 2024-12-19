@@ -153,18 +153,28 @@ extension SFLogger {
                              message: Any) -> SFLogInfo {
         var msgs = [Any]()
         // applicationState
-        DispatchQueue.main.async {
-            var msg_appState = "🅄"
+        let msg_appState: String = {
+            if Thread.isMainThread {
+                return getAppState()
+            } else {
+                return DispatchQueue.main.sync {
+                    getAppState()
+                }
+            }
+        }()
+        func getAppState() -> String {
             switch UIApplication.shared.applicationState {
             case .active:
-                msg_appState = "Ⓐ"
+                return "Ⓐ"
             case .inactive:
-                msg_appState = "⒤"
+                return "⒤"
             case .background:
-                msg_appState = "🅑"
+                return "🅑"
+            @unknown default:
+                return "🅄"
             }
-            msgs.append(msg_appState)
         }
+        msgs.append(msg_appState)
         // time
         let now = Date()
         if let time = log?.time {
