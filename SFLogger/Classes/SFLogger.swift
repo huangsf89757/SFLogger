@@ -20,6 +20,8 @@ public class SFLogger {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
+    
+    private var timeMap = [String: Date]()
 }
 
 // MARK: - config
@@ -132,18 +134,6 @@ extension SFLogger {
 
 // MARK: - func
 extension SFLogger {
-    private static func getMessage(tag: String? = nil, step: SFLogStep? = nil, msgs: Any...) -> String {
-        var messages = [Any]()
-        if let tag = tag {
-            messages.append(tag)
-        }
-        if let step = step {
-            messages.append(step.desc)
-        }
-        messages.append(contentsOf: msgs)
-        return messages.map { String(describing: $0) }.joined(separator: " ")
-    }
-    
     @discardableResult
     private static func custom(level: SwiftyBeaver.Level,
                                file: String = #file, function: String = #function, line: Int = #line, context: Any? = nil,
@@ -176,10 +166,18 @@ extension SFLogger {
         }
         msgs.append(msg_appState)
         // time
-        let now = Date()
         if let time = log?.time {
-            let msg_time = String(format: "%6.3f", now.timeIntervalSince(time))
+            let distance = Date().timeIntervalSince(time)
+            let msg_time = String(format: "%6.3f", distance)
             msgs.append(msg_time)
+        }
+        // tag
+        if let tag = tag {
+            msgs.append(tag)
+        }
+        // step
+        if let step = step {
+            msgs.append(step.desc)
         }
         // message
         msgs.append(message)
@@ -199,7 +197,7 @@ extension SFLogger {
                                step: SFLogStep? = nil,
                                from log: SFLogInfo? = nil,
                                msgs: Any...) -> SFLogInfo {
-        let message = getMessage(tag: tag, step: step, msgs: msgs)
+        let message = msgs.map { String(describing: $0) }.joined(separator: " ")
         return custom(level: .verbose,
                       file: file, function: function, line: line, context: context,
                       tag: tag,
@@ -214,7 +212,7 @@ extension SFLogger {
                              step: SFLogStep? = nil,
                              from log: SFLogInfo? = nil,
                              msgs: Any...) -> SFLogInfo {
-        let message = getMessage(tag: tag, step: step, msgs: msgs)
+        let message = msgs.map { String(describing: $0) }.joined(separator: " ")
         return custom(level: .debug,
                       file: file, function: function, line: line, context: context,
                       tag: tag,
@@ -229,7 +227,7 @@ extension SFLogger {
                             step: SFLogStep? = nil,
                             from log: SFLogInfo? = nil,
                             msgs: Any...) -> SFLogInfo {
-        let message = getMessage(tag: tag, step: step, msgs: msgs)
+        let message = msgs.map { String(describing: $0) }.joined(separator: " ")
         return custom(level: .info,
                       file: file, function: function, line: line, context: context,
                       tag: tag,
@@ -244,7 +242,7 @@ extension SFLogger {
                                step: SFLogStep? = nil,
                                from log: SFLogInfo? = nil,
                                msgs: Any...) -> SFLogInfo {
-        let message = getMessage(tag: tag, step: step, msgs: msgs)
+        let message = msgs.map { String(describing: $0) }.joined(separator: " ")
         return custom(level: .warning,
                       file: file, function: function, line: line, context: context,
                       tag: tag,
@@ -259,7 +257,7 @@ extension SFLogger {
                              step: SFLogStep? = nil,
                              from log: SFLogInfo? = nil,
                              msgs: Any...) -> SFLogInfo {
-        let message = getMessage(tag: tag, step: step, msgs: msgs)
+        let message = msgs.map { String(describing: $0) }.joined(separator: " ")
         return custom(level: .error,
                       file: file, function: function, line: line, context: context,
                       tag: tag,
@@ -274,7 +272,7 @@ extension SFLogger {
                                 step: SFLogStep? = nil,
                                 from log: SFLogInfo? = nil,
                                 msgs: Any...) -> SFLogInfo {
-        let message = getMessage(tag: tag, step: step, msgs: msgs)
+        let message = msgs.map { String(describing: $0) }.joined(separator: " ")
         return custom(level: .critical,
                       file: file, function: function, line: line, context: context,
                       tag: tag,
@@ -289,7 +287,7 @@ extension SFLogger {
                              step: SFLogStep? = nil,
                              from log: SFLogInfo? = nil,
                              msgs: Any...) -> SFLogInfo {
-        let message = getMessage(tag: tag, step: step, msgs: msgs)
+        let message = msgs.map { String(describing: $0) }.joined(separator: " ")
         return custom(level: .fault,
                       file: file, function: function, line: line, context: context,
                       tag: tag,
@@ -305,7 +303,7 @@ extension SFLogger {
                               step: SFLogStep? = nil,
                               from log: SFLogInfo? = nil,
                               msgs: Any...) -> SFLogInfo {
-        let message = getMessage(tag: tag, step: step, msgs: msgs)
+        let message = msgs.map { String(describing: $0) }.joined(separator: " ")
         return custom(level: level,
                       file: file, function: function, line: line, context: context,
                       tag: tag,
